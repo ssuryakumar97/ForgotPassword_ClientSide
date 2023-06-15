@@ -38,7 +38,7 @@ function Login(){
       alert("login successful");
       window.localStorage.setItem("token", data.data);
       window.localStorage.setItem("loggedIn" , true);
-      window.location.href = "./userdata"
+      window.location.href = "/userdata"
     }}
     );
     
