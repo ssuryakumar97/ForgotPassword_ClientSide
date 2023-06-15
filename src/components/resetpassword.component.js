@@ -15,9 +15,7 @@ function ResetPassword(){
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(login);
     const {email,password} = login;
-    console.log(email,password);
     fetch("https://loginpage-reset.onrender.com/api/forget-password",{
       method:"POST",
       crossDomain: true,

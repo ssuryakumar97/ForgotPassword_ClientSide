@@ -13,13 +13,11 @@ function SignUp(){
 
   const onInputChange = (e) => {
     setSignup({...signup,[e.target.name]: e.target.value})
-    // console.log(signup)
   }
   const handleSubmit = (e) => {
     
     e.preventDefault();
     const {fname,lname,email,password} = signup;
-    console.log(fname,lname,email,password);
     fetch("https://loginpage-reset.onrender.com/api/register",{
       method:"POST",
       crossDomain: true,

@@ -16,9 +16,7 @@ function Login(){
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(login);
     const {email,password} = login;
-    console.log(email,password);
     fetch("https://loginpage-reset.onrender.com/api/login",{
       method:"POST",
       crossDomain: true,

@@ -30,8 +30,7 @@ function UserData(){
       }
     });
 
-  }, [])
-  console.log(resdata)
+  }, []);
   const logout = () => {
     window.localStorage.clear();
     window.location.href = "/sign-in"
